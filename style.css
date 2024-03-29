@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kumbh+Sans:wght@100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: "Inter", sans-serif;
+}
+:root{
+--DarkBlue: hsl(240, 38%, 20%);
+--GrayishBlue: hsl(240, 18%, 77%);
+}
+h1{
+    font-size:1.5rem;
+    font-weight:400;
+    width:30rem;
+    line-height:2rem;
+    color: var(--DarkBlue);
+    position: relative;
+    left:5rem;
+}
+#cl{
+    position: relative;
+    left:9rem;
+}
+h2{
+  font-size:1.2rem;
+  color: var(--DarkBlue);
+  position: relative;
+  left:5rem;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .1}
+    to {opacity: 1}
+  }
+#change{
+    color: var(--GrayishBlue);
+}
+#userone img{
+    height:25rem;
+    box-shadow: 0px 5px 25px var(--GrayishBlue);
+    border-radius:1rem;
+}
+#usertwo img{
+    height:25rem;
+    box-shadow: 0px 5px 25px var(--GrayishBlue);
+    border-radius:1rem;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    background: url(images/pattern-curve.svg) no-repeat left bottom;
+}
+#fun{
+    position: relative;
+    left:9rem;
+}
+#quotes{
+    display: none;
+}
+#container{
+    display: flex;
+}
+#userone{
+    background:url(images/pattern-bg.svg) no-repeat center;
+    z-index:-1;
+    padding: 4rem;
+    position: relative;
+    left:3rem;
+    background-size: contain;
+}
+#usertwo{
+    background:url(images/pattern-bg.svg) no-repeat center;
+    z-index:-1;
+    padding: 4rem;
+    position: relative;
+    left:3rem;
+    background-size: contain;
+    display:none;
+}
+#discriptionone{
+    display: flex;
+    flex-direction:column;
+    gap:1rem;
+    justify-content: center;
+}
+#discriptiontwo{
+    display: flex;
+    flex-direction:column;
+    gap:1rem;
+    justify-content: center;
+    display:none;
+}
+#discriptionone img{
+height:5rem;
+width:5rem;
+position: relative;
+left:10rem;
+}
+#discriptiontwo img{
+height:5rem;
+width:5rem;
+position: relative;
+left:10rem;
+display:none;
+ }
+ #twoname{
+    position: relative;
+    left:9rem;
+ }
+#two{
+    position: relative;
+    left:9rem;
+}
+#userone-change-img{
+    position: relative;
+    top:27.5rem;
+    right:25rem;
+    z-index:1;
+    display: flex;
+    flex-direction:row;
+    height:1rem;
+    gap:3rem;
+    background-color:white;
+    padding:1rem;
+    border-radius:1rem;
+}
+#usertwo-change-img{
+    position: relative;
+    top:27.5rem;
+    right:25rem;
+    z-index:1;
+    display: flex;
+    flex-direction:row;
+    height:1rem;
+    gap:3rem;
+    background-color:white;
+    padding:1rem;
+    border-radius:1rem;
+    display:none;
+}
+@media (max-width:1100px) {
+    body{
+        background:none;
+    }
+    #userone{
+        padding: 3rem;
+    }
+    #usertwo{
+        padding:3rem;
+    }
+    #userone-change-img{
+        top:26rem;
+        right:24rem;
+    }
+    #usertwo-change-img{
+        top:26rem;
+        right:24rem;
+    }}
+@media (max-width:850px) {
+    #container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    #userone-change-img{
+        left:0rem;
+        top:29rem;
+        width:5rem;
+    }
+    #usertwo-change-img{
+        left:0rem;
+        top:29rem;
+        width:5rem;
+    }
+    #cl{
+       text-align: center;
+        left:0rem;
+    }
+    #fun{
+        text-align: center;
+        left:0rem;
+    }
+    #twoname{
+        text-align: center;
+        left:0rem;
+     }
+    #two{
+        text-align: center;
+        left:0rem;
+    }
+    #userone{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        left:0;
+    }
+    #usertwo{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        left:0;
+        display: none;
+    }
+    h1{
+        position: relative;
+        top:-3rem;
+    }
+    h2{
+        position:relative;
+        top:-2rem;
+    }
+    body{
+        padding-top:8rem;
+        padding-bottom:1rem;
+    }
+    #discriptionone img{
+        height:5rem;
+        width:5rem;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       left:12rem;
+    }
+        #discriptiontwo img{
+        height:5rem;
+        width:5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left:12rem;
+        display:none;
+    }}
+@media (max-width:500px) {
+    #userone img{
+        height:20rem;
+    }
+    #usertwo img{
+        height:20rem;
+    }
+    #userone{
+        padding: 2rem;
+    }
+    #usertwo{
+        padding: 2rem;
+    }
+    #discriptionone img{
+        height:3rem;
+        width:3rem;
+       left:8rem;
+    }
+        #discriptiontwo img{
+        height:3rem;
+        width:3rem;
+        left:10rem;
+        display:none;
+    }
+    #cl{
+       width:20rem;
+       font-size:1rem;
+     }
+     #fun{
+        font-size:0.8rem;
+     }
+     #twoname{
+        font-size:0.9rem;
+        width:15rem;
+        position: relative;
+        left:2rem;
+      }
+     #two{
+        width:20rem;
+        font-size:1rem;
+     }
+     #userone-change-img{
+        top:23rem;
+    }
+    #usertwo-change-img{
+        top:23rem;
+    }
+}
+@media (max-width:380px) {
+    #userone img{
+        height:15rem;
+    }
+    #usertwo img{
+        height:15rem;
+    }
+    #cl{
+        width:15rem;
+      }
+      #two{
+        width:15rem;
+     }
+     #twoname{
+        font-size:0.8rem;
+        left:0rem;
+        line-height:1.5rem;
+      }
+      #userone-change-img{
+        gap:2rem;
+        top:18rem;
+        width:3.5rem;
+    }
+    #usertwo-change-img{
+        gap:2rem;
+        top:18rem;
+        width:4rem;
+        width:3.5rem;
+    }
+}
